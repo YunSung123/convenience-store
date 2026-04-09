@@ -8,8 +8,8 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 public class Admin {
-    Integer id;
-    String admin_id;
-    String password;
-    String name;
+    private int id;          // PK
+    private String adminId;  // 로그인 ID (DB 컬럼명: admin_id)
+    private String password; // 비밀번호
+    private String name;     // 관리자 이름
 }
